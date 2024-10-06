@@ -20,6 +20,8 @@ def load_data():
 
 users_df, youtube_requests_df, videos_df = load_data()
 
+st.title("Youtube Fake Data Dashboard")
+
 st.sidebar.header("Фільтри")
 category_filter = st.sidebar.multiselect("Виберіть категорію відео", options=videos_df['category'].unique(), default=videos_df['category'].unique())
 date_filter = st.sidebar.date_input("Виберіть період часу", [youtube_requests_df['response_time'].min(), youtube_requests_df['response_time'].max()])
