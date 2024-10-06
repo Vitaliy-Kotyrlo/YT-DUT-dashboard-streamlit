@@ -1,7 +1,7 @@
 # 13. Замовлення корму для тварин
 import telebot
 
-bot = telebot.TeleBot('8144619073:AAFwHqP_4mDDvcX0WUhptDjEJ7b1cACAIz4')
+bot = telebot.TeleBot('--')
 
 @bot.message_handler(commands=['start'])
 def main(message):
