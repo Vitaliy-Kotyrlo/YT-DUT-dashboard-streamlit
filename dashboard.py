@@ -118,7 +118,7 @@ left_col, right_col = st.columns(2)
 
 with left_col:
     st.subheader("Топ-10 найпопулярніших відео") 
-    st.dataframe(top_videos[['title', 'views_count', 'request_count']])
+    st.dataframe(top_videos[['title', 'views_count', 'request_count']], hide_index  = True)
 
 with right_col:
     st.subheader("Lollipop Chart по категоріях")
