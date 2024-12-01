@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 from datetime import datetime, timedelta
 
 st.set_page_config(layout="wide")
-
+st.write("Test")
 @st.cache_data
 def load_data():
     users_df = pd.read_csv("data_fake/users.csv")
